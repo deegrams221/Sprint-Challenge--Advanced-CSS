@@ -294,6 +294,11 @@ footer {
   border: 1px solid #22283A;
 }
 @media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 450px;
+  }
+}  
+@media (max-width: 500px) {
   .home .walk .walk-text {
     margin-left: 0;
     width: 450px;
