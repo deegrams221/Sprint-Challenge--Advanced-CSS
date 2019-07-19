@@ -13,9 +13,7 @@
     }
 
     img {
-      width: 100%;
-      border-radius: 5px;
-      height: auto;
+      .img-style();
     }
   
   }
@@ -26,10 +24,8 @@
     width: 100%;
 
     img {
-      width: 28%;
+      .img-style(@width: 28%, @bd-radius:20px, @height:100%);
       margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
     }
   }
 
@@ -73,9 +69,7 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        .img-style(@width: 100%, @bd-radius: 10px, @height: auto);
       }
     }
   }
