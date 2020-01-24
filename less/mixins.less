@@ -1,1 +1,31 @@
 // Mixins Here
+// button mixin
+.btn-style(@btn-width: 100px, @btn-height: 40px, @btn-font: 1.8rem){
+    background-color: @btn-bg-color;
+    width: @btn-width;
+    height: @btn-height;
+    font-size: @btn-font;
+    line-height: 2;
+    text-align: center;
+    //padding-top: 4%;
+    border-radius: 5px;
+    color:@porcelain;
+    &:hover{
+      background-color:@porcelain;
+      color:@btn-bg-color;
+      border: 1px solid @btn-bg-color;
+    }
+  }
+
+  // image mixin
+  .img-style(@width: 100%, @bd-radius: 5px, @height: auto){
+    width: @width;
+    border-radius: @bd-radius;
+    height: @height;
+  }
+
+  // dislpay mixin
+  .display-flex(@display:flex, @direction: column){
+    display: @display;
+    flex-direction: @direction;
+  }
